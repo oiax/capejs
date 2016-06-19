@@ -1,28 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-{{ partial "html_head_for_top.html" . }}
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0;url=http://capejs.github.io/capejs/">
+<title>Page Redirection</title>
+</head>
 <body>
-<div class="page-container">
-{{ partial "header.html" . }}
-{{ partial "masthead.html" . }}
-<div class="container-fluid">
-  <div class="row row-offcanvas row-offcanvas-left">
-    {{ partial "sidebar.html" . }}
-    <div class="col-xs-12 col-md-9">
-    {{ partial "masthead_small.html" . }}
-    {{ range $index, $page := .Site.Pages.ByWeight }}
-      {{ if eq .Type "index" }}
-      <article>
-        <div>
-          {{ .Content }}
-        </div>
-      </article>
-      {{ end }}
-    {{ end }}
-    </div>
-  </div>
-</div>
-</div>
-{{ partial "footer.html" . }}
+We've moved to a new location!. If you are not redirected automatically, follow
+this <a href='http://capejs.github.io/capejs/'>link</a>.
 </body>
 </html>

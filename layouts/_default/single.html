@@ -1,29 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-{{ partial "html_head.html" . }}
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0;url=http://capejs.github.io{{ .RelPermalink }}">
+<title>Page Redirection</title>
+</head>
 <body>
-{{ partial "header.html" . }}
-<div class="container">
-  <div class="row row-offcanvas row-offcanvas-left">
-    {{ if eq .Type "api" }}
-    {{ partial "api_sidebar.html" . }}
-    {{ else }}
-    {{ partial "sidebar.html" . }}
-    {{ end }}
-    <div class="col-sm-12 col-md-9">
-      <article>
-        <header>
-          <h2>{{ .Title }}</h2>
-          <div class="post-meta clearfix">
-          </div>
-        </header>
-        <div>
-          {{ .Content }}
-        </div>
-      </article>
-    </div>
-  </div>
-</div>
-{{ partial "footer.html" . }}
+We've moved to a new location!. If you are not redirected automatically, follow
+this <a href='http://capejs.github.io{{ .RelPermalink }}'>link</a>.
 </body>
 </html>
